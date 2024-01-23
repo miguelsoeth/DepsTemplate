@@ -28,6 +28,11 @@ namespace DepsTemplate.Web.Endpoints.PepEndpoints
             _pepService = pepService;
         }
         [HttpGet]
+        [SwaggerOperation(
+          Summary = "Obtém um pep por periodo",
+          OperationId = "Peps.GetByPeriod",
+          Tags = new[] { "PepEndpoints" })
+        ]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
