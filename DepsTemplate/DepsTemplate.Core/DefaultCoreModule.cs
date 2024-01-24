@@ -13,6 +13,9 @@ namespace DepsTemplate.Core
 
             builder.RegisterType<PerfilService>()
                 .As<IPerfilService>().InstancePerLifetimeScope();
+
+            builder.RegisterType<PepService>()
+                .As<IPepService>().InstancePerLifetimeScope();
         }
     }
 }

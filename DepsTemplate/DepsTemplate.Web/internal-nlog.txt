@@ -563,3 +563,73 @@
 2024-01-23 17:51:18.3075 Warn MongoTarget(Name=logfile): Exception in Initialize Exception: NLog.NLogConfigurationException: Can not resolve MongoDB ConnectionString. Please make sure the ConnectionString property is set.
    at NLog.Mongo.MongoTarget.InitializeTarget()
    at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+2024-01-24 13:32:06.6604 Info Message Template Auto Format enabled
+2024-01-24 13:32:06.6604 Info Loading assembly: NLog.Mongo
+2024-01-24 13:32:06.7487 Info Adding target MongoTarget(Name=logfile)
+2024-01-24 13:32:06.7778 Info Validating config: TargetNames=logfile, ConfigItems=17, FilePath=C:\Users\migue\Desktop\DepsTemplate\DepsTemplate\DepsTemplate.Web\bin\Debug\net6.0\NLog.config
+2024-01-24 13:32:06.8187 Warn MongoTarget(Name=logfile): Exception in Initialize Exception: NLog.NLogConfigurationException: Can not resolve MongoDB ConnectionString. Please make sure the ConnectionString property is set.
+   at NLog.Mongo.MongoTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+2024-01-24 13:39:16.0283 Info Message Template Auto Format enabled
+2024-01-24 13:39:16.0350 Info Loading assembly: NLog.Mongo
+2024-01-24 13:39:16.1352 Info Adding target MongoTarget(Name=logfile)
+2024-01-24 13:39:16.2316 Info Validating config: TargetNames=logfile, ConfigItems=17, FilePath=C:\Users\migue\Desktop\DepsTemplate\DepsTemplate\DepsTemplate.Web\bin\Debug\net6.0\NLog.config
+2024-01-24 13:39:16.2895 Warn MongoTarget(Name=logfile): Exception in Initialize Exception: NLog.NLogConfigurationException: Can not resolve MongoDB ConnectionString. Please make sure the ConnectionString property is set.
+   at NLog.Mongo.MongoTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+2024-01-24 13:40:10.7567 Info Message Template Auto Format enabled
+2024-01-24 13:40:10.7567 Info Loading assembly: NLog.Mongo
+2024-01-24 13:40:10.8499 Info Adding target MongoTarget(Name=logfile)
+2024-01-24 13:40:10.8854 Info Validating config: TargetNames=logfile, ConfigItems=17, FilePath=C:\Users\migue\Desktop\DepsTemplate\DepsTemplate\DepsTemplate.Web\bin\Debug\net6.0\NLog.config
+2024-01-24 13:40:10.9103 Warn MongoTarget(Name=logfile): Exception in Initialize Exception: NLog.NLogConfigurationException: Can not resolve MongoDB ConnectionString. Please make sure the ConnectionString property is set.
+   at NLog.Mongo.MongoTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+2024-01-24 13:44:43.4086 Info Message Template Auto Format enabled
+2024-01-24 13:44:43.4086 Info Loading assembly: NLog.Mongo
+2024-01-24 13:44:43.5113 Info Adding target MongoTarget(Name=logfile)
+2024-01-24 13:44:43.5395 Info Validating config: TargetNames=logfile, ConfigItems=17, FilePath=C:\Users\migue\Desktop\DepsTemplate\DepsTemplate\DepsTemplate.Web\bin\Debug\net6.0\NLog.config
+2024-01-24 13:44:43.5623 Warn MongoTarget(Name=logfile): Exception in Initialize Exception: NLog.NLogConfigurationException: Can not resolve MongoDB ConnectionString. Please make sure the ConnectionString property is set.
+   at NLog.Mongo.MongoTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+2024-01-24 13:56:33.6576 Info Message Template Auto Format enabled
+2024-01-24 13:56:33.6576 Info Loading assembly: NLog.Mongo
+2024-01-24 13:56:33.7608 Info Adding target MongoTarget(Name=logfile)
+2024-01-24 13:56:33.7958 Info Validating config: TargetNames=logfile, ConfigItems=17, FilePath=C:\Users\migue\Desktop\DepsTemplate\DepsTemplate\DepsTemplate.Web\bin\Debug\net6.0\NLog.config
+2024-01-24 13:56:33.8498 Warn MongoTarget(Name=logfile): Exception in Initialize Exception: NLog.NLogConfigurationException: Can not resolve MongoDB ConnectionString. Please make sure the ConnectionString property is set.
+   at NLog.Mongo.MongoTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+2024-01-24 14:09:21.5581 Info Message Template Auto Format enabled
+2024-01-24 14:09:21.5644 Info Loading assembly: NLog.Mongo
+2024-01-24 14:09:21.6987 Info Adding target MongoTarget(Name=logfile)
+2024-01-24 14:09:21.7376 Info Validating config: TargetNames=logfile, ConfigItems=17, FilePath=C:\Users\migue\Desktop\DepsTemplate\DepsTemplate\DepsTemplate.Web\bin\Debug\net6.0\NLog.config
+2024-01-24 14:09:21.7746 Warn MongoTarget(Name=logfile): Exception in Initialize Exception: NLog.NLogConfigurationException: Can not resolve MongoDB ConnectionString. Please make sure the ConnectionString property is set.
+   at NLog.Mongo.MongoTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+2024-01-24 14:42:16.1186 Info Message Template Auto Format enabled
+2024-01-24 14:42:16.1267 Info Loading assembly: NLog.Mongo
+2024-01-24 14:42:16.2146 Info Adding target MongoTarget(Name=logfile)
+2024-01-24 14:42:16.2472 Info Validating config: TargetNames=logfile, ConfigItems=17, FilePath=C:\Users\migue\Desktop\DepsTemplate\DepsTemplate\DepsTemplate.Web\bin\Debug\net6.0\NLog.config
+2024-01-24 14:42:16.2935 Warn MongoTarget(Name=logfile): Exception in Initialize Exception: NLog.NLogConfigurationException: Can not resolve MongoDB ConnectionString. Please make sure the ConnectionString property is set.
+   at NLog.Mongo.MongoTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+2024-01-24 14:46:03.6691 Info Message Template Auto Format enabled
+2024-01-24 14:46:03.6766 Info Loading assembly: NLog.Mongo
+2024-01-24 14:46:03.7771 Info Adding target MongoTarget(Name=logfile)
+2024-01-24 14:46:03.8076 Info Validating config: TargetNames=logfile, ConfigItems=17, FilePath=C:\Users\migue\Desktop\DepsTemplate\DepsTemplate\DepsTemplate.Web\bin\Debug\net6.0\NLog.config
+2024-01-24 14:46:03.8303 Warn MongoTarget(Name=logfile): Exception in Initialize Exception: NLog.NLogConfigurationException: Can not resolve MongoDB ConnectionString. Please make sure the ConnectionString property is set.
+   at NLog.Mongo.MongoTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+2024-01-24 14:53:52.7349 Info Message Template Auto Format enabled
+2024-01-24 14:53:52.7349 Info Loading assembly: NLog.Mongo
+2024-01-24 14:53:52.8374 Info Adding target MongoTarget(Name=logfile)
+2024-01-24 14:53:52.8771 Info Validating config: TargetNames=logfile, ConfigItems=17, FilePath=C:\Users\migue\Desktop\DepsTemplate\DepsTemplate\DepsTemplate.Web\bin\Debug\net6.0\NLog.config
+2024-01-24 14:53:52.9288 Warn MongoTarget(Name=logfile): Exception in Initialize Exception: NLog.NLogConfigurationException: Can not resolve MongoDB ConnectionString. Please make sure the ConnectionString property is set.
+   at NLog.Mongo.MongoTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+2024-01-24 14:56:48.5717 Info Message Template Auto Format enabled
+2024-01-24 14:56:48.5793 Info Loading assembly: NLog.Mongo
+2024-01-24 14:56:48.6760 Info Adding target MongoTarget(Name=logfile)
+2024-01-24 14:56:48.7089 Info Validating config: TargetNames=logfile, ConfigItems=17, FilePath=C:\Users\migue\Desktop\DepsTemplate\DepsTemplate\DepsTemplate.Web\bin\Debug\net6.0\NLog.config
+2024-01-24 14:56:48.7512 Warn MongoTarget(Name=logfile): Exception in Initialize Exception: NLog.NLogConfigurationException: Can not resolve MongoDB ConnectionString. Please make sure the ConnectionString property is set.
+   at NLog.Mongo.MongoTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)

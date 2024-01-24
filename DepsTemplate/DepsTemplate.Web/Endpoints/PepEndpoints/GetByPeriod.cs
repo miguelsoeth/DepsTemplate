@@ -1,16 +1,10 @@
 ﻿using Ardalis.ApiEndpoints;
-using DepsTemplate.Core.Entities.PerfilAggregate;
 using DepsTemplate.Core.Interfaces;
-using DepsTemplate.SharedKernel.Interfaces;
-using DepsTemplate.Web.Endpoints.PerfilEndpoints;
 using DepsTemplate.Web.Filters;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using System.ComponentModel.DataAnnotations;
-using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -34,12 +28,18 @@ namespace DepsTemplate.Web.Endpoints.PepEndpoints
           OperationId = "Pep.GetByPeriod",
           Tags = new[] { "PepEndpoints" })
         ]
-        public override async Task<ActionResult<GetPepByPeriodResponse>> HandleAsync(GetPepByPeriodRequest request, CancellationToken cancellationToken = default)
+        public override async Task<ActionResult<GetPepByPeriodResponse>> HandleAsync(
+            [FromQuery] GetPepByPeriodRequest request, 
+            CancellationToken cancellationToken = default)
         {
-            var entity = await _pepService.ConsultaPep(request.Cpf, request.DataInicioExercicio, request.DataFimExercicio);
+            if (!VerifyCpf.IsValid(request.Cpf))
+            {
+                return BadRequest();
+            }
+            var entity = await _pepService.PepByPeriod(request.Cpf, request.DataInicioExercicio, request.DataFimExercicio);
             if (entity == null) return NotFound();
 
-            return Ok(entity);
+            return Ok(entity.DadosRetorno);
         }
     }
 }

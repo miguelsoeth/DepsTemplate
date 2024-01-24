@@ -17,7 +17,7 @@ namespace DepsTemplate.Core.Services
             _portalTransparenciaAPI = portalTransparenciaAPI;
         }
 
-        public async Task<ResponseGenerico<List<PepDto>>> ConsultaPep(string cpf, string periodoInicial, string periodoFinal)
+        public async Task<ResponseGenerico<List<PepDto>>> PepByPeriod(string cpf, string periodoInicial, string periodoFinal)
         {
             var peps = await _portalTransparenciaAPI.ConsultaPep(cpf, periodoInicial, periodoFinal);
             return _mapper.Map<ResponseGenerico<List<PepDto>>>(peps);

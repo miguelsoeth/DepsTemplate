@@ -1,17 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace DepsTemplate.Web.Endpoints.PepEndpoints
 {
     public class GetPepByPeriodRequest
     {
-        public const string Route = "peps/{PerfilId:int}";
-        public static string BuildRoute(int perfilId) => Route.Replace("{PerfilId:int}", perfilId.ToString());
-        public string? Cpf { get; set; }
-        public string? DataInicioExercicio { get; set; }
-        public string? DataFimExercicio { get; set; }
+        public const string Route = "peps";
+
+        [FromQuery]
+        [Required]
+        [RegularExpression("^[0-9]{11}$")]
+        public string Cpf { get; set; }
+
+        [FromQuery]
+        [RegularExpression(@"^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$")]
+        public string DataInicioExercicio { get; set; }
+
+        [FromQuery]
+        [RegularExpression(@"^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$")]
+        public string DataFimExercicio { get; set; }
     }
 }

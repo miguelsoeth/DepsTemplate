@@ -7,6 +7,6 @@ namespace DepsTemplate.Core.Interfaces
 {
     public interface IPepService
     {
-        Task<ResponseGenerico<List<PepDto>>> ConsultaPep(string cpf, string periodoInicial, string periodoFinal);
+        Task<ResponseGenerico<List<PepDto>>> PepByPeriod(string cpf, string periodoInicial, string periodoFinal);
     }
 }

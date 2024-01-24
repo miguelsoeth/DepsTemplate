@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using DepsTemplate.Core.DTO;
-using DepsTemplate.Core.Models;
+using DepsTemplate.Infrastructure.ExternalModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,8 +14,8 @@ namespace DepsTemplate.Core.Mappings
         public PepMapping()
         {
             CreateMap(typeof(ResponseGenerico<>), typeof(ResponseGenerico<>));
-            CreateMap<PepDto, PepModel>();
-            CreateMap<PepModel, PepDto>();
+            CreateMap<PepDto, ExternalPepModelResponse>();
+            CreateMap<ExternalPepModelResponse, PepDto>();
         }
     }
 }
