@@ -1,9 +1,11 @@
 ﻿using Ardalis.ApiEndpoints;
+using DepsTemplate.Core.DTO;
 using DepsTemplate.Core.Interfaces;
 using DepsTemplate.Web.Filters;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Threading;
 using System.Threading.Tasks;
@@ -28,13 +30,14 @@ namespace DepsTemplate.Web.Endpoints.PepEndpoints
           OperationId = "Pep.GetByPeriod",
           Tags = new[] { "PepEndpoints" })
         ]
+        [ProducesResponseType(typeof(List<PepDto>), 200)]
         public override async Task<ActionResult<GetPepByPeriodResponse>> HandleAsync(
             [FromQuery] GetPepByPeriodRequest request, 
             CancellationToken cancellationToken = default)
         {
             if (!VerifyCpf.IsValid(request.Cpf))
             {
-                return BadRequest();
+                return BadRequest(new { error = "CPF Inválido" });
             }
             var entity = await _pepService.PepByPeriod(request.Cpf, request.DataInicioExercicio, request.DataFimExercicio);
             if (entity == null) return NotFound();
