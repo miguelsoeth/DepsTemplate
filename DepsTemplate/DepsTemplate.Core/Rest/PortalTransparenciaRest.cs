@@ -1,6 +1,6 @@
 ﻿using DepsTemplate.Core.DTO;
+using DepsTemplate.Core.ExternalModels;
 using DepsTemplate.Core.Interfaces;
-using DepsTemplate.Infrastructure.ExternalModels;
 using System.Collections.Generic;
 using System.Dynamic;
 using System.Net.Http;
@@ -23,6 +23,32 @@ namespace DepsTemplate.Core.Rest
                 var responsePortalTransparenciaApi = await client.SendAsync(request);
                 var contentResponse = await responsePortalTransparenciaApi.Content.ReadAsStringAsync();
                 var objResponse = JsonSerializer.Deserialize<List<ExternalPepModelResponse>>(contentResponse);
+
+                if (responsePortalTransparenciaApi.IsSuccessStatusCode)
+                {
+                    response.CodigoHttp = responsePortalTransparenciaApi.StatusCode;
+                    response.DadosRetorno = objResponse;
+                }
+                else
+                {
+                    response.CodigoHttp = responsePortalTransparenciaApi.StatusCode;
+                    response.ErroRetorno = JsonSerializer.Deserialize<ExpandoObject>(contentResponse);
+                }
+            }
+            return response;
+        }
+
+        public async Task<ResponseGenerico<List<ExternalCepimModelResponse>>> ConsultaCepim(string cnpj)
+        {
+            var request = new HttpRequestMessage(HttpMethod.Get, $"https://api.portaldatransparencia.gov.br/api-de-dados/cepim?cnpjSancionado={cnpj}");
+            request.Headers.Add("chave-api-dados", apiKey);
+            var response = new ResponseGenerico<List<ExternalCepimModelResponse>>();
+
+            using (var client = new HttpClient())
+            {
+                var responsePortalTransparenciaApi = await client.SendAsync(request);
+                var contentResponse = await responsePortalTransparenciaApi.Content.ReadAsStringAsync();
+                var objResponse = JsonSerializer.Deserialize<List<ExternalCepimModelResponse>>(contentResponse);
 
                 if (responsePortalTransparenciaApi.IsSuccessStatusCode)
                 {

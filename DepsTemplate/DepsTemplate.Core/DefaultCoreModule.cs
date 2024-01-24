@@ -16,6 +16,9 @@ namespace DepsTemplate.Core
 
             builder.RegisterType<PepService>()
                 .As<IPepService>().InstancePerLifetimeScope();
+
+            builder.RegisterType<CepimService>()
+                .As<ICepimService>().InstancePerLifetimeScope();
         }
     }
 }

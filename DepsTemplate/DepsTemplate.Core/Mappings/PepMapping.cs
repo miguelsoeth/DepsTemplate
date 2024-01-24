@@ -1,11 +1,6 @@
 ﻿using AutoMapper;
 using DepsTemplate.Core.DTO;
-using DepsTemplate.Infrastructure.ExternalModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using DepsTemplate.Core.ExternalModels;
 
 namespace DepsTemplate.Core.Mappings
 {

@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace DepsTemplate.Infrastructure.ExternalModels
+namespace DepsTemplate.Core.ExternalModels
 {
     public class ExternalPepModelResponse
     {
