@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using DepsTemplate.Core.ExternalModels;
 
 namespace DepsTemplate.Infrastructure.Data
 {
@@ -28,6 +29,7 @@ namespace DepsTemplate.Infrastructure.Data
         public DbSet<ParametrizacaoMetrica> ParametrizacaoMetricas => Set<ParametrizacaoMetrica>();
         public DbSet<AgrupadorParametrizacao> AgrupadoresParametrizacao => Set<AgrupadorParametrizacao>();
         public DbSet<PerfilMetrica> PerfisMetricas => Set<PerfilMetrica>();
+        public DbSet<QueryHistoryModel> queries => Set<QueryHistoryModel>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
